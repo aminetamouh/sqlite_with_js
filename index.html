@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL lite 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="pop"></div>
+        <div class="up">
+            <div class="row">
+                <div class="col-lg-1 offset-lg-10 close">X</div>
+                <div class="col-lg-2 offset-lg-1">Cin:</div>
+                <div class="col-lg-7"><input type="text" id="inpt_cin" class="data form-control"></div>
+                <div class="col-lg-2 offset-lg-1">Nom:</div>
+                <div class="col-lg-7"><input type="text" id="inpt_nom" class="data form-control"></div>
+                <div class="col-lg-2 offset-lg-1">Prenom:</div>
+                <div class="col-lg-7"><input type="text" id="inpt_prenom" class="data form-control"></div>
+                <div class="col-lg-2 offset-lg-1">Age:</div>
+                <div class="col-lg-7"><input type="number" id="inpt_age" class="data form-control"></div>
+                <div class="col-lg-7 offset-lg-3">
+                    <button class="btn btn-success btn-block" id="add">Ajouter</button>
+                    <button class="btn btn-danger btn-block" id="annuler">Annuler</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4 add">
+                <button type="button" class="btn btn-success btn-block" id="add_per">Ajouter nouvelle personne</button>
+            </div>
+            <div class="col-lg-6 offset-lg-3 show">
+                <h2>Affichage de la table:</h2>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Cin</th>
+                        <th scope="col">Prenom</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Opperation</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbd">
+                     
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
